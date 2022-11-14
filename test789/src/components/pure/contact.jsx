@@ -9,7 +9,7 @@ const Contact = ({ contacto, estado, eliminar, cambiarEstado }) => {
                 <span>{contacto.nombre}</span>
                 </th>
                 <td>
-                <button onClick={() => cambiarEstado(contacto)}>{(contacto.estado==="Conectado") ? "Conectado":"Desconectado"}</button>
+                <button onClick={() => cambiarEstado(contacto)}>{contacto.estado}</button>
                 <button onClick={() => eliminar(contacto)}>Eliminar</button>
                 </td>
                 </tr>
